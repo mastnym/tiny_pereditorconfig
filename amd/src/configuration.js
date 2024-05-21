@@ -21,8 +21,6 @@
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-
-import url from 'core/url';
 export const configure = (instanceConfig) => {
     if (instanceConfig.target.closest('.ddwtoshtml')){
         return {
@@ -35,7 +33,6 @@ export const configure = (instanceConfig) => {
                     items: ['bold', 'italic', 'superscript', 'subscript', 'code']
                 }],
             menubar: false,
-            content_css: url.relativeUrl('/lib/editor/tiny/plugins/supsub/styles.css'),
             height:100,
         };
     }
